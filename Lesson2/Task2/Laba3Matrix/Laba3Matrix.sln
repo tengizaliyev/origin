@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Laba3Matrix", "Laba3Matrix.vcxproj", "{B94461FC-86B7-432E-A0FA-A9BD1CDA0C09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B94461FC-86B7-432E-A0FA-A9BD1CDA0C09}.Debug|x64.ActiveCfg = Debug|x64
+		{B94461FC-86B7-432E-A0FA-A9BD1CDA0C09}.Debug|x64.Build.0 = Debug|x64
+		{B94461FC-86B7-432E-A0FA-A9BD1CDA0C09}.Debug|x86.ActiveCfg = Debug|Win32
+		{B94461FC-86B7-432E-A0FA-A9BD1CDA0C09}.Debug|x86.Build.0 = Debug|Win32
+		{B94461FC-86B7-432E-A0FA-A9BD1CDA0C09}.Release|x64.ActiveCfg = Release|x64
+		{B94461FC-86B7-432E-A0FA-A9BD1CDA0C09}.Release|x64.Build.0 = Release|x64
+		{B94461FC-86B7-432E-A0FA-A9BD1CDA0C09}.Release|x86.ActiveCfg = Release|Win32
+		{B94461FC-86B7-432E-A0FA-A9BD1CDA0C09}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC78610B-B678-4CEA-9166-4251BDA6C19C}
+	EndGlobalSection
+EndGlobal
