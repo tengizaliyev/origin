@@ -1,0 +1,11 @@
+# Игнорируем временные файлы Visual Studio
+*.ipch
+.vs/
+*.sdf
+*.db
+*.obj
+*.log
+*.tlog
+*.pdb
+*.idb
+*.opendb
