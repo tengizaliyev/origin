@@ -1,0 +1,6 @@
+﻿  MathFuncs.cpp
+  math_functions.cpp
+  math_functions.h
+  Generating Code...
+x64\Debug\math_functions.obj : warning LNK4042: object specified more than once; extras ignored
+  MathFuncs.vcxproj -> C:\Users\ASUS ROG\OneDrive\Desktop\CppTasks\Lesson6\Task1\MathFuncs\x64\Debug\MathFuncs.exe
