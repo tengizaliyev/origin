@@ -1,0 +1,35 @@
+# Visual Studio
+.vscode/
+.vs/
+*.vcxproj*
+*.sln
+*.filters
+*.user
+
+# Build directories
+build/
+out/
+x64/
+Debug/
+Release/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Logs and temp files
+*.log
+*.obj
+*.o
+*.pch
+*.tmp
+*.idb
+*.ipch
+*.tlog
+*.pdb
+
+# System files
+Thumbs.db
+.DS_Store
