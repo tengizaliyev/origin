@@ -1,0 +1,20 @@
+# Игнорируем временные файлы Visual Studio
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+
+# Игнорируем папки с бинарниками и объектами
+x64/
+Debug/
+Release/
+
+# Игнорируем временные файлы
+*.obj
+*.log
+*.ipch
+*.pch
+*.tmp
+*.tlog
+*.idb
+*.opendb
+*.VC.db
