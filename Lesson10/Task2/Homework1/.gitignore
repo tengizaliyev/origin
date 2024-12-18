@@ -1,0 +1,40 @@
+# Visual Studio specific files
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.sln
+*.suo
+*.db
+*.opendb
+*.log
+
+# Debug and build folders
+Debug/
+Release/
+x64/
+*.obj
+*.o
+*.out
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+
+# Temporary files
+*.tmp
+*.temp
+*.~*
+*.swp
+
+# Ignore generated output and logs
+*.log
+*.tlog
+
+# macOS specific files (if using Mac)
+.DS_Store
+
+# IDE cache files
+*.ipch
+*.cache
+*.dir
