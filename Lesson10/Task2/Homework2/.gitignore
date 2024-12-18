@@ -1,0 +1,41 @@
+# Visual Studio Specific
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.db
+*.opendb
+*.VC.db
+
+
+# Build Output
+Debug/
+Release/
+x64/Debug/
+x64/Release/
+*.obj
+*.o
+*.exe
+*.dll
+*.lib
+*.pdb
+*.ilk
+*.exp
+
+# Logs and Temporary files
+*.log
+*.tmp
+*.tlog/
+*.lastbuildstate
+
+# Ignore generated solutions
+*.sln
+*.suo
+*.ncb
+*.sdf
+*.ipch
+*.opensdf
+*.VC.db
+
+# Ignore custom build files
+out/
+build/
