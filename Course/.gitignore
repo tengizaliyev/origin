@@ -1,0 +1,37 @@
+# Игнорируем выходные файлы сборки
+**/Debug/
+**/Release/
+**/x64/
+**/x86/
+
+# Игнорируем временные файлы Visual Studio
+*.vcxproj.user
+*.vcxproj.filters
+*.sdf
+*.ipch
+*.opensdf
+*.tlog
+*.lastbuildstate
+*.log
+
+# Игнорируем временные файлы решения
+*.suo
+*.cache
+*.pdb
+*.ilk
+*.idb
+*.obj
+*.exe
+*.lib
+*.dll
+*.exp
+
+# Игнорируем временные папки
+.vscode/
+.vs/
+bin/
+obj/
+
+# Оставляем файлы проектов Visual Studio
+!**/*.sln
+!**/*.vcxproj
