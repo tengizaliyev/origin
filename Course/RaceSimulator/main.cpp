@@ -20,6 +20,15 @@ void showMenu() {
     std::cout << "Выберите тип гонки: ";
 }
 
+void showRegisteredTransports(const std::vector<std::shared_ptr<Transport>>& participants) {
+    std::cout << "Зарегистрированные транспортные средства: ";
+    for (size_t i = 0; i < participants.size(); ++i) {
+        std::cout << participants[i]->getName();
+        if (i < participants.size() - 1) std::cout << ", ";
+    }
+    std::cout << "\n";
+}
+
 int main() {
     setupConsoleForRussian();
 
@@ -69,7 +78,24 @@ int main() {
 
             if (choice == 0) break;
             if (choice > 0 && choice <= filteredTransports.size()) {
-                race.registerTransport(filteredTransports[choice - 1]);
+                std::shared_ptr<Transport> selectedTransport = filteredTransports[choice - 1];
+
+                bool alreadyRegistered = false;
+                for (const auto& registered : race.getParticipants()) {
+                    if (registered->getName() == selectedTransport->getName()) {
+                        alreadyRegistered = true;
+                        break;
+                    }
+                }
+
+                if (!alreadyRegistered) {
+                    race.registerTransport(selectedTransport);
+                    std::cout << selectedTransport->getName() << " успешно зарегистрирован!\n";
+                    showRegisteredTransports(race.getParticipants());
+                }
+                else {
+                    std::cout << "Ошибка: " << selectedTransport->getName() << " уже зарегистрирован!\n";
+                }
             }
             else {
                 std::cout << "Неверный выбор. Попробуйте снова.\n";

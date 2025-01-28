@@ -15,9 +15,8 @@ void Race::registerTransport(std::shared_ptr<Transport> transport) {
 
 void Race::runRace(double distance) {
     for (auto& participant : participants) {
-        // Сохраняем рассчитанное время внутри участника
         double time = participant->calculateTime(distance);
-        participant->setRaceTime(time); // Убедитесь, что метод setRaceTime есть в классе Transport
+        participant->setRaceTime(time);
     }
 }
 
@@ -25,7 +24,7 @@ void Race::printResults() const {
     std::vector<std::pair<std::string, double>> results;
 
     for (const auto& transport : participants) {
-        results.emplace_back(transport->getName(), transport->getRaceTime()); // Убедитесь, что getRaceTime есть в классе Transport
+        results.emplace_back(transport->getName(), transport->getRaceTime());
     }
 
     std::sort(results.begin(), results.end(), [](const auto& a, const auto& b) {
@@ -37,7 +36,20 @@ void Race::printResults() const {
     }
 }
 
-// Реализация нового метода
 size_t Race::getParticipantsCount() const {
     return participants.size();
+}
+
+void Race::showRegisteredTransports() const {
+    std::cout << "Зарегистрированные транспортные средства: ";
+    for (size_t i = 0; i < participants.size(); ++i) {
+        std::cout << participants[i]->getName();
+        if (i < participants.size() - 1) std::cout << ", ";
+    }
+    std::cout << "\n";
+}
+
+// Реализация метода getParticipants()
+const std::vector<std::shared_ptr<Transport>>& Race::getParticipants() const {
+    return participants;
 }

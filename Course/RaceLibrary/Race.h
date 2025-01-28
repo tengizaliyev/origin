@@ -14,8 +14,11 @@ public:
     void runRace(double distance);
     void printResults() const;
 
-    // Метод для получения количества зарегистрированных участников
     size_t getParticipantsCount() const;
+    void showRegisteredTransports() const;
+
+
+    const std::vector<std::shared_ptr<Transport>>& getParticipants() const;
 };
 
 #endif // RACE_H
