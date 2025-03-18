@@ -1,0 +1,45 @@
+# Игнорировать каталоги CMake
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/build/
+/out/
+
+# Игнорировать конфигурационные файлы Visual Studio
+/.vs/
+/x64/
+/*.vcxproj.user
+/*.vcxproj.filters
+/*.vcxproj.*
+
+# Игнорировать временные файлы и выходные артефакты
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+*.log
+*.idb
+*.ipch
+*.tlog
+*.lastbuildstate
+
+# Игнорировать IDE-файлы
+*.idea/
+*.sln.docstates
+*.ncb
+*.suo
+*.opt
+*.plg
+
+# Игнорировать выходные артефакты CLion/JetBrains
+cmake-build-*/
+
+# Игнорировать резервные файлы
+*~
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
